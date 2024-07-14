@@ -23,3 +23,23 @@ Antes de iniciar, certifique-se de ter os seguintes requisitos instalados em sua
    ```bash
    git clone https://github.com/seu-usuario/sgrh-api.git
    cd sgrh-api
+
+3. Configuração do Banco de Dados:
+
+Certifique-se de ter um servidor MySQL em execução.
+Configure as credenciais do banco de dados em config/database.js.
+
+4.Executar as Migrações do Banco de Dados:
+
+O Sequelize utiliza migrações para criar e alterar tabelas no banco de dados. Execute o seguinte comando para criar as tabelas necessárias:
+
+```bash
+npx sequelize-cli db:migrate
+```
+
+5. Executar a Aplicação:
+```bash
+node app.js
+```
+
+A aplicação será executada localmente em http://localhost:3000.
